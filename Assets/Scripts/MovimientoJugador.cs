@@ -2,25 +2,26 @@ using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
 {
-    [Header("Ajustes de Movimiento")]
-    [Tooltip("Velocidad de desplazamiento del personaje")]
-    public float velocidad = 7.0f;
+    [Header("Ajustes de Salto")]
+    public float fuerzaSalto = 5.0f; // La fuerza hacia arriba al rebotar
+    
+    private Rigidbody rb;
 
-    void Update()
+    void Start()
     {
-        // Detectamos la entrada del teclado (WASD o Flechas)
-        // GetAxis devuelve un valor entre -1 y 1
-        float movHorizontal = Input.GetAxis("Horizontal");
-        float movVertical = Input.GetAxis("Vertical");
+        // Obtenemos la referencia al Rigidbody al iniciar
+        rb = GetComponent<Rigidbody>();
+    }
 
-        // Creamos un vector de movimiento:
-        // X = Movimiento lateral (Derecha/Izquierda)
-        // Y = 0 (No queremos que flote solo con las flechas)
-        // Z = Movimiento frontal (Adelante/Atrás)
-        Vector3 direccion = new Vector3(movHorizontal, 0, movVertical);
-
-        // Aplicamos el movimiento al Transform
-        // Time.deltaTime asegura que la velocidad sea constante sin importar los FPS
-        transform.Translate(direccion * velocidad * Time.deltaTime);
+    // Usamos OnCollisionEnter para detectar cuando toca el suelo/plataforma
+    private void OnCollisionEnter(Collision collision)
+    {
+        // 1. Verificamos que el impacto sea contra una plataforma (opcionalmente por Tag)
+        // 2. Solo saltamos si el personaje está cayendo (velocidad Y negativa o casi cero)
+        if (rb.linearVelocity.y <= 0.1f)
+        {
+            // Aplicamos una velocidad directa hacia arriba para un rebote limpio
+            rb.linearVelocity = new Vector3(0, fuerzaSalto, 0);
+        }
     }
 }
