@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3105965544297515542}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 5823529579282958077}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 3205431804886485990}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 1530317707889169409}
   m_Layer: 0
   m_Name: SensorPuntaje (1)
-  m_TagString: Untagged
+  m_TagString: SensorPuntaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 7932643011349853098}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 2398441167252219141}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 7809449678706485231}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 9157515656798155961}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 6654072860162686067}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 5280010476329529468}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
